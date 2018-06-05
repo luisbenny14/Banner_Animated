@@ -17,20 +17,24 @@ Debido a que en este proyecto tu contenido debe estar animado, utilizarás la bi
 var block = document.querySelector(".block");
 TweenLite.to(block, 2, {left:"100%"});
 ```
-*Tomar en cuenta que .to es hacia, el primer argumento es el elemento a animar, el segundo argumento es el tiempo que tarda la animación y el tercer argumento es un objeto que contiene las propiedades a cambiar. En este ejemplo, se indica cambiar progresivamente la propiedad left de block hasta llegar al 100% del ancho de la ventana, esto sucederá en un lapso de 2 segundos.
+http://jsbin.com/sitekizaye/edit?html,css,js,output
+
+*Tomar en cuenta que .to es hacia, el primer argumento es el elemento a animar, el segundo argumento es el tiempo que tarda la animación y el tercer argumento es un objeto que contiene las propiedades a cambiar. En este ejemplo, se indica cambiar progresivamente la propiedad left de block hasta llegar al 100% del ancho de la ventana, esto sucederá en un lapso de 2 segundos.*
 
 ### Animar un bloque desde donde está hasta el 50% de la ventana con un rebote
 ```Javascript
 var block = document.querySelector(".block");
 TweenLite.to(block, 2, {left:"50%", ease: Back.easeOut});
 ```
-<a class="jsbin-embed" href="http://jsbin.com/figumugeka/2/embed?html,css,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?4.1.4"></script>
-*En este ejemplo, se indica cambiar progresivamente la propiedad left de block hasta llegar al 50% del ancho de la ventana, con un efecto de rebote al final(Back.easeOut) esto sucederá en un lapso de 2 segundos.
+http://jsbin.com/figumugeka/2/edit?html,css,js,output
+
+*En este ejemplo, se indica cambiar progresivamente la propiedad left de block hasta llegar al 50% del ancho de la ventana, con un efecto de rebote al final(Back.easeOut) esto sucederá en un lapso de 2 segundos.*
 
 ### Animar un bloque desde donde está hasta el 50% de la ventana esperando 2 segundos
 ```Javascript
 var block = document.querySelector(".block");
 TweenLite.to(block, 2, {left:"50%", delay: 1});
 ```
-http://jsbin.com/figumugeka/edit?html,css,js,output
-*En este ejemplo, se indica cambiar progresivamente la propiedad left de block hasta llegar al 50% del ancho de la ventana, con un tiempo de espera de 2 segundos, pasado ese tiempo de espera, la animación se completará en un lapso de 2 segundos.
+http://jsbin.com/buzigonube/edit?html,css,js,output
+
+*En este ejemplo, se indica cambiar progresivamente la propiedad left de block hasta llegar al 50% del ancho de la ventana, con un tiempo de espera de 2 segundos, pasado ese tiempo de espera, la animación se completará en un lapso de 2 segundos.*
