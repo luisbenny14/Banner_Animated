@@ -12,6 +12,9 @@ img {
   -ms-transform: rotateZ( 0.1deg);
   -o-transform: rotateZ( 0.1deg);
   transform: rotateZ( 0.1deg);
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 /* Container */
@@ -25,4 +28,7 @@ img {
   left: 0;
   z-index: 10;
   cursor: pointer;
+}
+.Button{
+  z-index: 11;
 }
